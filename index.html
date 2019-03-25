@@ -1,0 +1,150 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Home One || Richman</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+        <!-- Place favicon.ico in the root directory -->
+
+		<!-- all css here -->
+		<!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+		<!-- animate css -->
+        <link rel="stylesheet" href="../css/animate.css">
+		<!-- jquery-ui.min css -->
+        <link rel="stylesheet" href="../css/jquery-ui.min.css">
+		<!-- meanmenu css -->
+        <link rel="stylesheet" href="../css/meanmenu.min.css">
+		<!-- owl.carousel css -->
+        <link rel="stylesheet" href="../css/owl.carousel.css">
+		<!-- slick slider css -->
+		<link rel="stylesheet" href="../css/slick.css">
+		<!-- font-awesome css -->
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+		<!-- style css -->
+		<link rel="stylesheet" href="../css/style.css">
+		<!-- responsive css -->
+        <link rel="stylesheet" href="../css/responsive.css">
+		<!-- modernizr js -->
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+		<!-- header start -->
+        <header>
+			<!-- header-top-area start -->
+			<!--  <div th:replace="headerTopArea :: headerTopArea"></div>-->
+			<!-- Under construction -->
+			<!-- header-top-area end -->
+			
+			<!-- header-bottom-area start -->
+			<div th:replace="headerBottomArea :: headerBottomArea"></div>
+			<!-- header-bottom-area end -->
+			
+			<!-- mobile-menu-area start -->
+			<div th:replace="mobileMenuArea :: mobileMenuArea"></div>
+			<!-- mobile-menu-area end -->
+		</header>
+		<!-- header end -->
+
+		<!-- slider-area start -->
+		<div th:replace="sliderArea :: sliderArea"></div>
+		<!-- slider-area end -->
+
+		<!-- banner-area start -->
+		  <div th:replace="bannerArea :: bannerArea"></div> 
+		<!-- banner-area end -->
+		
+		<!-- featured-area start -->
+		<!--<div th:replace="featuredArea :: featuredArea"></div>-->
+		<!-- Under construction -->
+		<!-- featured-area end -->
+		
+		<!-- brand-area start -->
+		<div th:replace="brandArea :: brandArea"></div>
+		<!-- brand-area end -->
+
+		<!-- footer start -->
+		<footer>
+			<div th:include="footer :: footer"></div>
+		</footer>
+		<!-- footer end -->
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="productModal" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+			  </div>
+			  <div class="modal-body">
+				<div class="modal-img">
+					<a href="shop.html"><img src="img/product/1.jpg" alt="" /></a>
+				</div>
+				<div class="modal-pro-content">
+					<h3><a href="product-details.html">Phasellus Vel Hendrerit</a></h3>
+					<div class="pro-rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span>(2 customer reviews)</span>
+					<div class="price">
+						<span>$70.00</span>
+						<span class="old">$80.11</span>
+					</div>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+					<form action="#">
+						<input type="number" value="1" />
+						<button>Add to cart</button>
+					</form>
+					<div class="product_meta">
+						<span class="posted_in">Categories: <a rel="tag" href="#">Albums</a>, <a rel="tag" href="#">Music</a></span> <span class="tagged_as">Tags: <a rel="tag" href="#">Albums</a>, <a rel="tag" href="#">Music</a></span>
+					</div>
+					<div class="social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<!-- Modal end -->
+
+
+
+		<!-- all js here -->
+		<!-- jquery latest version -->
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+		<!-- bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- owl.carousel js -->
+        <script src="js/owl.carousel.min.js"></script>
+		<!-- meanmenu js -->
+        <script src="js/jquery.meanmenu.js"></script>
+		<!-- jquery-ui js -->
+        <script src="js/jquery-ui.min.js"></script>
+		<!-- wow js -->
+        <script src="js/wow.min.js"></script>
+		<!-- plugins js -->
+        <script src="js/plugins.js"></script>
+		<!-- main js -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
